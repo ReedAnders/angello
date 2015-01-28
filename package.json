@@ -7,7 +7,7 @@
         "test": "tests"
     },
     "scripts": {
-        "test": "karma start --single-run --browsers PhantomJS karma.conf.js"
+        "test": "karma start --single-run --browsers PhantomJS client/tests/karma.conf.js"
     },
     "repository": {
         "type": "git",
@@ -22,7 +22,8 @@
     },
     "contributors": [
         "Brian Ford <btford@umich.edu> (http://briantford.com/)",
-        "Lukas Ruebbelke <simpul@gmail.com> (http://onehungrymind.com/)"
+        "Lukas Ruebbelke <simpul@gmail.com> (http://onehungrymind.com/)",
+        "Reed Anderson"
     ],
     "license": "MIT",
     "readmeFilename": "README.md"
