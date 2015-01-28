@@ -1,6 +1,8 @@
 # Angello
 
-Welcome to Angello, the AngularJS storyboard! Based off the [Trello App](https://trello.com), this repo holds the code for the app built in the [AngularJS in Action](http://www.manning.com/bford/) book. Read on to get started!
+This forked repo adds to the app built in the [AngularJS in Action](http://www.manning.com/bford/) book. Additions so far include the addition of unit tests of controllers, models and services, with integration into Travis CI.
+
+[![Build Status](https://travis-ci.org/ReedAnders/angello.svg?branch=master)](https://travis-ci.org/ReedAnders/angello)
 
 ## Prerequisites
 You'll need [`git`](http://git-scm.com/), a web browser, and a local web server.
