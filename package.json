@@ -11,7 +11,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/angularjs-in-action/angello.git"
+        "url": "git://github.com/reedanders/angello.git"
     },
     "devDependencies": {
         "karma": "~0.12",
