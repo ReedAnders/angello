@@ -15,9 +15,8 @@ module.exports = function (config) {
           'vendor/angular-route.js',
           'vendor/angular-animate.js',
           'vendor/angular-mocks.js',
-          'tests/mocks/*.js',
           'src/angello/**/*.js',
-          'tests/**/*.js'
+          'tests/**/*.spec.js'
         ],
 
 
@@ -46,7 +45,7 @@ module.exports = function (config) {
 
 
         // enable / disable watching file and executing tests whenever any file changes
-        autoWatch: false,
+        autoWatch: true,
 
 
         // Start these browsers, currently available:

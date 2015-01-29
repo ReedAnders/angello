@@ -1,6 +1,6 @@
 angular.module('Angello.Common')
     .service('LoginService',
-        function ($rootScope, LoadingService, EndpointConfigService, auth, store,
+        function ($rootScope, EndpointConfigService, auth, store,
             CURRENT_BACKEND, $log, $location, jwtHelper) {
             var service = this;
 
