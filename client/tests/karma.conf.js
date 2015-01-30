@@ -22,7 +22,8 @@ module.exports = function (config) {
 
         // list of files to exclude
         exclude: [
-
+           'tests/**/DashboardController.spec.js',
+           'tests/**/StoryboardController.spec.js'
         ],
 
 
