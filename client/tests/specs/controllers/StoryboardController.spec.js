@@ -24,4 +24,12 @@ describe('StoryBoard Controller', function () {
         expect(ctrl.currentStory).toBeNull();
         expect(ctrl.editedStory).toEqual({});
     });
+
+    it('should delete a story', function () {
+        var story = ctrl.stories[0];
+
+        ctrl.deleteStory(story.id);
+
+        expect(ctrl.stories).not.toContain(story);
+    });
 });
