@@ -5,27 +5,7 @@
 
 describe("Dashboard Controller", function () {
 
-    var scope, createController,
-        statuses = [
-            {name: 'Back Log'},
-            {name: 'To Do'},
-            {name: 'In Progress'},
-            {name: 'Code Review'},
-            {name: 'QA Review'},
-            {name: 'Verified'},
-            {name: 'Done'}
-        ],
-        types = [
-            {name: 'Feature'},
-            {name: 'Enhancement'},
-            {name: 'Bug'},
-            {name: 'Spike'}
-        ],
-        stories = [
-            {title: 'First story', description: 'Our first story.', criteria: 'Criteria pending.', status: 'To Do', type: 'Feature', reporter: 'Lukas Ruebbelke', assignee: 'Brian Ford'},
-            {title: 'Second story', description: 'Do something.', criteria: 'Criteria pending.', status: 'Back Log', type: 'Feature', reporter: 'Lukas Ruebbelke', assignee: 'Brian Ford'},
-            {title: 'Another story', description: 'Just one more.', criteria: 'Criteria pending.', status: 'Code Review', type: 'Enhancement', reporter: 'Lukas Ruebbelke', assignee: 'Brian Ford'}
-        ];
+    var scope, createController;
 
     beforeEach(module('Angello.Dashboard'));
 
@@ -50,6 +30,7 @@ describe("Dashboard Controller", function () {
         };
     }));
 
+    // TODO debug ctrl init
     it('should retrieve all stories', function () {
         var ctrl = createController();
         expect(dashboard.stories).toEqual(stories);
