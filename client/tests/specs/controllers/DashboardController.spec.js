@@ -5,7 +5,7 @@
 
 describe("Dashboard Controller", function () {
 
-    var scope, createController;
+    var ctrl, stories, statuses, types;
 
     beforeEach(module('Angello.Dashboard'));
 
@@ -20,25 +20,22 @@ describe("Dashboard Controller", function () {
         $provide.constant('STORY_TYPES', types);
     }));
 
-    beforeEach(inject(function ($rootScope, $controller) {
-        scope = $rootScope.$new();
-
-        createController = function() {
-            return $controller('DashboardCtrl', {
-                '$scope': scope
-            });
+    beforeEach(inject(function ($controller) {
+        ctrl = $controller('DashboardCtrl', {});
+        ctrl.detailsForm = {
+            $setPristine: function () {},
+            $setUntouched: function () {}
         };
     }));
 
-    // TODO debug ctrl init
+    // TODO mock return promise from .then()
+
     it('should retrieve all stories', function () {
-        var ctrl = createController();
-        expect(dashboard.stories).toEqual(stories);
+        expect(ctrl.stories).toEqual(stories);
     });
 
     it('should have a statuses count of seven', function () {
-        var ctrl = createController();
-        expect(dashboard.stories).toBe(7);
+        expect(ctrl.stories).toBe(7);
     });
 
 });

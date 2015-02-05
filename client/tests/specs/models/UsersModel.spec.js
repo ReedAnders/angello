@@ -1,6 +1,3 @@
-/**
- * Created by reedanderson on 1/28/15.
- */
 'use strict';
 
 describe('Users Model', function () {
